@@ -1,0 +1,173 @@
+ <!-- slide com condiçoes de pagamento e frete  -->
+<header>
+<div class="tipbar">
+  <div class="carousel" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <p>frete grátis acima de R$299,99</p>
+       </div>
+       <div class="carousel-item">
+        <p>parcelamos em até 12x</p>
+       </div>     
+    </div>
+  </div>
+</div>
+
+<!-- fim do slide  -->
+<div class="container_head">
+  <span class="container_logo">
+    <a routerlink=""><img src="assets/img/LogoGameMania.svg" alt="logo do site game mania"></a>
+  </span>
+  <span class="header_titulo">
+    <h1>GAME MANIA</h1>
+  </span>
+  <nav class="container_icones">
+    <div id="login" class="login"> 
+  <!-- area de login do usuario -->
+      <a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><img src="assets/img/account_circle_black_24dp.svg" alt="area de login do cliente" ></a>
+    
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        <span type="button" class="material-icons" data-bs-dismiss="offcanvas" aria-label="Close">close</span>
+      </div>
+      <div class="offcanvas-body">
+        <h2>bem vindo ao <b>game mania</b></h2>
+        <p>faça o seu login e aproveite</p>
+        <form>
+          <div class="mb-3">
+           
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div id="emailHelp" class="form-text">Nós não compartilhamos suas informções.</div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <button type="submit" class="btn" mat-raised-button color="primary">Entrar</button>
+         </form>
+        <span>
+          <p>ainda não está registrado</p>
+          <a href="novo"><p>registra-se aqui</p></a>
+        </span>
+      
+
+      </div>
+     
+    
+    </div>
+      </div>
+    <a href="#"><img src="assets/img/feedback_black_24dp.svg" alt="cental de atendimento ao cliente"></a>
+    <a href="#"><img src="assets/img/shopping_cart_black_24dp.svg" alt="sacola de compras"></a>
+  </nav>
+
+  <div class="menu_barras">
+    <button mat-icon-button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+      <h1 id="offcanvasRightLabel">MENU</h1>
+      <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <hr>
+      
+      <mat-expansion-panel hideToggle >
+        <mat-expansion-panel-header>
+          LOGIN
+        </mat-expansion-panel-header>
+        <h2>Bem vindo a <b>GAME MANIA</b></h2>
+        <p>Faça o seu login e aproveite</p>
+        <form>
+          <div class="mb-3">
+           
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div id="emailHelp" class="form-text">Nós não compartilhamos suas informções.</div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <button type="submit" class="btn" mat-raised-button color="primary">Entrar</button>
+         </form>
+        <span>
+          <p>ainda não está registrado</p>
+          <a href="novo"><p>registra-se aqui</p></a>
+        </span>
+      </mat-expansion-panel>
+ <hr>
+      <mat-expansion-panel hideToggle >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            categorias
+          </mat-panel-title>
+        </mat-expansion-panel-header >
+        <div class="menu_categorias">
+          <a href="#">games</a>
+          <hr>
+          <a href="consoles">consoles</a><hr>
+          <a href="#">informática</a><hr>
+          <a href="#">smartphones</a><hr>
+        </div>
+      </mat-expansion-panel>
+<hr>
+  <mat-expansion-panel hideToggle >
+    <mat-expansion-panel-header>
+    <mat-panel-title>
+      SUPORTE
+    </mat-panel-title>
+  </mat-expansion-panel-header >
+  <div class="menu_categorias">
+    <a href="#">fale conosco</a>
+    <a href="#">reclamações</a><hr>
+    <a href="#">nossa loja</a><hr>
+  </div>
+  </mat-expansion-panel>  
+<hr>
+<div class="procura_menu">
+  <form class="d-flex">
+    <input class="form-control me-2" type="search" placeholder="   Tente 'playstation'" aria-label="Search">
+    <button class="btn btn-dark btn-lg" type="submit">Buscar</button>
+  </form>
+
+</div>
+    </div>
+</div>
+        
+  </div>
+
+
+</div>
+
+
+<!-- barra de navegação nav bar  -->
+
+<mat-toolbar>
+    <mat-toolbar-row>
+      <a href="#">lançamentos</a>
+      <a href="produtos">produtos</a>
+      <a href="#">games</a>
+      <a href="#">#game_mania</a>
+      <button mat-button [matMenuTriggerFor]="menu">suporte</button>
+      <mat-menu #menu="matMenu">
+       <button mat-menu-item><a href="#">fale conosco</a></button>
+       <button mat-menu-item><a href="#">reclamações</a></button>
+       <hr>
+       <button mat-menu-item><a href="#">nossa loja</a></button>
+      </mat-menu>
+    </mat-toolbar-row>
+
+    <div class="procura_site">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="   Tente 'playstation'" aria-label="Search">
+        <button type="submit" mat-raised-button>Buscar</button>
+      </form>
+
+    </div>
+
+   
+</mat-toolbar>
+
+</header>
